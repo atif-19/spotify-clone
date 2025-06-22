@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css2?family=Alike+Angular&family=Edu+NSW+ACT+Hand+Pre:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+:root {
+      --primary:#1F1F1F;
+      --secondary: white;
+      --primaryText: white;
+      --secondaryText: grey;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: black;
+      color: var(--primaryText);
+      font-family: "Roboto", sans-serif;
+      font-optical-sizing: auto;
+      font-style: normal;
+      font-variation-settings: "wdth" 100;
+    }
+    .container {
+      display: flex;
+      background-color: black;
+      /* border: 2px solid red; */
+      height: 745px;
+      width: 1255px;
+    }
+    .left {
+      display: flex;
+      flex-direction: column;
+      width: 239px;
+      height: 715px;
+      /* border: 2px solid red; */
+    }
+    .logo {
+        width: 239px;
+        height: 85px;
+        /* border: 2px solid red; */
+    }
+    .logo img {
+        width: 119px;
+        height: 35px;
+      margin: 20px 100px 30px 20px;
+    }
+    .options {
+      display: flex;
+      height: auto;
+      flex-direction: column;
+      /* border: 2px solid red; */
+      width: 239px;
+      gap: 15px;
+    }
+    .item img {
+      height: 18px;
+      width: 18px;
+    }
+    .item:hover {
+        color: var(--primaryText);
+        background-color: #1db9541a;
+        cursor: pointer;
+        border-radius: 4px;
+    }
+    
+    .item {
+        width: auto;
+        /* overflow: hidden; */
+        display: flex;
+        gap: 15px;  
+        /* border: 2px solid red; */
+        height: 18px;
+        margin-left: 20px;
+      margin-right: 20px;
+      color: var(--secondaryText);
+      font-size: 0.75rem;
+      align-items: center;
+      font-weight: 800;
+    }
+    .library {
+        margin-bottom: 48px;
+    }
+    .foot {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        /* border: 2px solid red; */
+        width: auto;
+        height: 463px;
+        padding-left: 30px;
+        padding-right: 20px;
+    }
+    .services {
+        font-size: 0.75rem;
+        /* border: 2px solid rgb(219, 213, 213); */
+        width: 177px;
+      height: auto;
+    }
+    .c1 ul {
+      display: flex;
+      gap: 14px;
+      /* overflow; */
+      list-style: none;
+      color: var(--secondaryText);
+      font-size: 0.75rem;
+      margin: 10px;
+    }
+    .c1 ul li:hover {
+        color: var(--primaryText);
+        cursor: pointer;
+    }
+    .c2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--primary);
+        color: var(--primaryText);
+        border: 1px solid var(--primaryText);
+        border-radius: 99px;
+        width: 84px;
+        height: 27px;
+        gap: 10px;
+        padding: 5px 13px;
+    }
+    .c2 select {
+        background-color: transparent;
+        color: var(--primaryText);
+        border: none;
+        font-size: 12px;
+        font-family: "Roboto", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        font-variation-settings: "wdth" 100;
+    }
+    .c2 select option {
+        border: none;
+        background-color: var(--primary);
+        color: var(--primaryText);
+    }
+    .right {
+      height: 745px;
+      width: 1016px;
+      /* border: 2px solid red; */
+      background-color: #1F1F1F;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+    .right nav {
+        width: inherit;
+        gap: 32px;
+        padding:8px 30px 8px 0px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 59px;
+        /* border-bottom: 1px solid var(--secondaryText); */
+        background-color: #101010;
+    }
+    .right nav button {
+        font-size: 0.75rem;
+        font-weight: 700;
+        font-family: "Roboto", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        font-variation-settings: "wdth" 100;
+    }
+    .right .login{
+        height:43px;
+        width:88px;
+        border: none;
+        border-radius: 99px;
+        background-color:var(--primaryText);
+        color: var(--primary);
+    }
+    .right .login:hover{
+        background-color: var(--secondaryText);
+        color: var(--primaryText);
+        cursor: pointer;
+    }
+    .right .signup{
+        background-color: transparent;
+        border: none;
+        color: var(--secondaryText);
+    }
+    .right .signup:hover{
+        color: var(--primaryText);
+        cursor: pointer;
+    }
+    .CardContainer {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      gap: 25px;
+      padding-right:30px;
+      padding-left:30px;
+      /* border: 2px solid red; */
+      width: inherit; 
+      height: 320px;
+    }
+    .head{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* border: 2px solid red; */
+    }
+    .head h2 {
+        font-size: 1.5rem;
+        font-weight: 700;
+        font-family: "Roboto", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        font-variation-settings: "wdth" 100;
+    }
+    .head button{
+         background-color: transparent;
+        border: none;
+        color: var(--secondaryText);
+    }
+    .head button:hover {
+        color: var(--primaryText);
+        cursor: pointer;
+    }
+    .cards{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        /* border: 2px solid red; */
+        width: 963px;
+        height: 253px;
+    }
+    .card{
+        height:253px;
+        width:175px;
+        /* border: 1px solid rgb(245, 238, 238); */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 17.7px;
+        border-radius: 5.15px;
+        background-color: #161616;
+        /* padding: 12.88px; */
+    }
+    .card img{
+        width:auto;
+        height:auto;
+        border-radius: 5.15px;
+    }
+    .content{
+        /* padding: 0px 10px 10px 10px; */
+        /* border: 2px solid red; */
+        width: auto;
+        height: 56.67px;
+        display: flex;
+        flex-direction: column;
+        overflow:-moz-hidden-unscrollable;
+        font-size: 10.3px;
+        gap: 12.88px;
+    }
+    .content p{
+        color: var(--secondaryText);
+        /* font-size: 0.75rem; */
+        font-weight: 400;
+        font-family: "Roboto", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        font-variation-settings: "wdth" 100;
+    }
