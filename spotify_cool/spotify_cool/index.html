@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Spotify Clone</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="Favicon.png" type="image/x-icon"/>
   </head>
   <body>
     <div class="container">
@@ -39,39 +40,53 @@
 
         <!-- Song Playlist Section -->
         <div class="songplaylist">
-          <h3>Songs</h3>
+          <h3>Songs </h3>
+          <input type="text" placeholder="Search songs..." class="search-bar" />
           <ol>
             <li>
-              <img src="music.png" alt="music">
+              <img src="music.png" alt="music"><img src="eq-icon.png" alt="eq-icon" class="eq-icon"style='display: none;'>
               <div class="song-info">
                 <div class="songn">Blinding Lights</div>
-                <div class="art">The Weeknd</div>
+                <audio src="" class="CurrentSong"></audio>
+                <div class="art">The Weekend</div>
               </div>
-              <img src="playSong.png" alt="play">
+              <img src="playSong.png" alt="play"class="song-play">
+              <img src="heart.png" alt="heart" class="heart">
             </li>
             <li>
-              <img src="music.png" alt="music">
+              <img src="music.png" alt="music"><img src="eq-icon.png" alt="eq-icon" class="eq-icon"style='display: none;'>
               <div class="song-info">
+                <audio src="" class="CurrentSong"></audio>
                 <div class="songn">Perfect</div>
                 <div class="art">Ed Sheeran</div>
               </div>
-              <img src="playSong.png" alt="play">
+              <img src="playSong.png" alt="play"class="song-play">
+              <img src="heart.png" alt="heart" class="heart">
             </li>
             <li>
               <img src="music.png" alt="music">
+
+              <img src="eq-icon.png" alt="eq-icon" class="eq-icon"style='display: none;'>
               <div class="song-info">
+                <audio src="" class="CurrentSong"></audio>
                 <div class="songn">Shape of You</div>
                 <div class="art">Ed Sheeran</div>
               </div>
-              <img src="playSong.png" alt="play">
+              <img src="playSong.png" alt="play"class="song-play">
+              <img src="heart.png" alt="heart" class="heart">
             </li>
             <li>
               <img src="music.png" alt="music">
+              <img src="eq-icon.png" alt="eq-icon" class="eq-icon"style='display: none;'>
               <div class="song-info">
+                <audio src="" class="CurrentSong"></audio>
                 <div class="songn">Peaches</div>
                 <div class="art">Justin Bieber</div>
               </div>
-              <img src="playSong.png" alt="play">
+              <img src="playSong.png" alt="play" class="song-play">
+
+              
+              <img src="heart.png" alt="heart"  class="heart">
             </li>
           </ol>
         </div>
@@ -109,13 +124,22 @@
         <header>
           <nav>
             <div class="playbar">
-              <div class="song-title">Blinding Lights</div>
-              <div class="playbuttons">
-                <img src="left-arrow.png" alt="left arrow">
-                <img src="playSong.png" alt="play">
-                <img src="right-arrow.png" alt="right arrow">
+              <div class="non_seekbar_things">
+
+                <div class="song-title">Blinding Lights</div>
+                <div class="playbuttons">
+                  <img src="left-arrow.png" alt="left arrow">
+                  <img src="playSong.png" alt="play" id="play-button">
+                  <img src="right-arrow.png" alt="right arrow" id="next">
+                </div>
+                <div class="artist">The Weeknd</div>
               </div>
-              <div class="artist">The Weeknd</div>
+
+              <div class="seekbar">
+                <div class="circle">
+                  
+                </div>
+              </div>
             </div>
             <div class="buttons">
               <button class="signup">Sign up</button>
@@ -127,7 +151,7 @@
         <!-- Cards Section -->
         <div class="box">
           <div class="CardContainer">
-            <div class="head">
+          <div class="head">
               <h2>Focus</h2>
               <button class="show-btn">Show all</button>
             </div>
@@ -168,10 +192,70 @@
                   <p>Perfect music to concentrate on coding.</p>
                 </div>
               </div>
+              <div class="card">
+                <img src="deep.png" alt="Coding Mode">
+                <div class="content">
+                  <h3>Coding Mode</h3>
+                  <p>Perfect music to concentrate on coding.</p>
+                </div>
+              </div>
+            </div>
+          </div>    
+          <!-- ... -->
+           <div class="CardContainer">
+          <div class="head">
+              <h2>Focus</h2>
+              <button class="show-btn">Show all</button>
+            </div>
+
+            <div class="cards">
+              <div class="card">
+                <img src="deep.png" alt="Deep Focus">
+                <div class="content">
+                  <h3>Deep Focus</h3>
+                  <p>Focus with ambient and post-rock music.</p>
+                </div>
+              </div>
+              <div class="card">
+                <img src="deep.png" alt="Peaceful Piano">
+                <div class="content">
+                  <h3>Peaceful Piano</h3>
+                  <p>Relax and indulge with beautiful piano pieces.</p>
+                </div>
+              </div>
+              <div class="card">
+                <img src="deep.png" alt="Instrumental Study">
+                <div class="content">
+                  <h3>Instrumental Study</h3>
+                  <p>Focus with soft and slow instrumental tracks.</p>
+                </div>
+              </div>
+              <div class="card">
+                <img src="deep.png" alt="Beats to think to">
+                <div class="content">
+                  <h3>Beats to think to</h3>
+                  <p>Chill and study with lo-fi beats and chillhop.</p>
+                </div>
+              </div>
+              <div class="card">
+                <img src="deep.png" alt="Coding Mode">
+                <div class="content">
+                  <h3>Coding Mode</h3>
+                  <p>Perfect music to concentrate on coding.</p>
+                </div>
+              </div>
+              <div class="card">
+                <img src="deep.png" alt="Coding Mode">
+                <div class="content">
+                  <h3>Coding Mode</h3>
+                  <p>Perfect music to concentrate on coding.</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
